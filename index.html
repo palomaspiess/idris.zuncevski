@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idris Zuncevski — Software Engineer</title>
+  <meta name="description" content="Personal website of Idris Zuncevski — Software Engineer specialising in distributed systems and open-source tooling." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="index.html">idris<span>.</span>zuncevski</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tech.html">Tech</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ── Hero ───────────────────────────────────────────── -->
+    <section class="hero container">
+      <div class="hero__label">Available for collaboration</div>
+      <h1 class="hero__title">
+        Hi, I'm <em>Idris</em> —<br />
+        Software Engineer
+      </h1>
+      <p class="hero__subtitle">
+        I build reliable, well-crafted software — from distributed back-end systems
+        to developer tools. I care about clean interfaces, reproducible infrastructure,
+        and code that reads well six months later.
+      </p>
+      <div class="hero__actions">
+        <a href="tech.html" class="btn btn--primary">View my work →</a>
+        <a href="contact.html" class="btn btn--outline">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ── Highlights ─────────────────────────────────────── -->
+    <section class="highlights container">
+      <div class="grid-3">
+        <div class="card highlight-card">
+          <div class="highlight-card__icon">⚙️</div>
+          <h3 class="highlight-card__title">Back-end &amp; Systems</h3>
+          <p class="highlight-card__body">
+            Distributed services, APIs, message queues — writing robust code that
+            stays reliable under real-world load.
+          </p>
+        </div>
+        <div class="card highlight-card">
+          <div class="highlight-card__icon">🛠</div>
+          <h3 class="highlight-card__title">Dev Tools &amp; OSS</h3>
+          <p class="highlight-card__body">
+            CLI programs, build systems, language tooling. I enjoy making
+            the developer experience frictionless.
+          </p>
+        </div>
+        <div class="card highlight-card">
+          <div class="highlight-card__icon">☁️</div>
+          <h3 class="highlight-card__title">Infrastructure</h3>
+          <p class="highlight-card__body">
+            Containers, CI/CD pipelines, cloud-native deployments with
+            Kubernetes and Terraform.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 <span>Idris Zuncevski</span></p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="about.html">About</a>
+        <a href="tech.html">Tech</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

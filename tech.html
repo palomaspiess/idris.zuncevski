@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech — Idris Zuncevski</title>
+  <meta name="description" content="Open-source projects, technical writing and the tools I use — Idris Zuncevski." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="index.html">idris<span>.</span>zuncevski</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tech.html">Tech</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- ── Heading ───────────────────────────────────────── -->
+      <p class="section-label">Tech</p>
+      <h1 class="section-title">Projects &amp; Tools</h1>
+      <p class="section-intro">
+        Open-source work, side projects and the technical stack I rely on day to day.
+        All source code is on GitHub.
+      </p>
+
+      <!-- ── Filters ───────────────────────────────────────── -->
+      <div class="tech-filters">
+        <button class="filter-btn active" data-filter="all">all</button>
+        <button class="filter-btn" data-filter="systems">systems</button>
+        <button class="filter-btn" data-filter="tooling">tooling</button>
+        <button class="filter-btn" data-filter="infra">infra</button>
+        <button class="filter-btn" data-filter="pl">lang</button>
+      </div>
+
+      <!-- ── Projects ──────────────────────────────────────── -->
+      <div class="projects-grid">
+
+        <article class="project-card" data-category="systems">
+          <div class="project-card__header">
+            <h2 class="project-card__title">fluxgate</h2>
+            <div class="project-card__links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <p class="project-card__desc">
+            A lightweight, embeddable pub/sub broker written in Rust. Supports
+            persistent topics, consumer groups and at-least-once delivery without
+            a ZooKeeper dependency.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Rust</span>
+            <span class="tag">async</span>
+            <span class="tag">tokio</span>
+            <span class="tag">networking</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="tooling">
+          <div class="project-card__header">
+            <h2 class="project-card__title">cue-check</h2>
+            <div class="project-card__links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <p class="project-card__desc">
+            A CLI tool that validates Kubernetes manifests against CUE schemas,
+            integrates with pre-commit hooks and outputs structured diagnostics
+            for CI pipelines.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Go</span>
+            <span class="tag">CLI</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">CUE</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="pl">
+          <div class="project-card__header">
+            <h2 class="project-card__title">lambdac</h2>
+            <div class="project-card__links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <p class="project-card__desc">
+            A pedagogical compiler for a simply-typed lambda calculus extended
+            with algebraic data types and pattern matching, targeting LLVM IR.
+            Accompanies my M.Sc. thesis.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Rust</span>
+            <span class="tag">LLVM</span>
+            <span class="tag">type theory</span>
+            <span class="tag">compilers</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="infra">
+          <div class="project-card__header">
+            <h2 class="project-card__title">k8s-starter</h2>
+            <div class="project-card__links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <p class="project-card__desc">
+            Opinionated Terraform + Helm starter kit for production-ready
+            Kubernetes clusters on AWS EKS, including Prometheus, Loki and
+            automated TLS with cert-manager.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Terraform</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Helm</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="tooling">
+          <div class="project-card__header">
+            <h2 class="project-card__title">logview</h2>
+            <div class="project-card__links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <p class="project-card__desc">
+            Terminal log viewer that parses JSON structured logs, filters by
+            severity and field predicates, and renders them with readable
+            colour-coded output.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Rust</span>
+            <span class="tag">TUI</span>
+            <span class="tag">JSON</span>
+            <span class="tag">observability</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="systems">
+          <div class="project-card__header">
+            <h2 class="project-card__title">raft-kv</h2>
+            <div class="project-card__links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+          </div>
+          <p class="project-card__desc">
+            Educational implementation of the Raft consensus algorithm with a
+            replicated key-value store. Includes leader election, log replication
+            and membership change.
+          </p>
+          <div class="project-card__tags">
+            <span class="tag">Go</span>
+            <span class="tag">Raft</span>
+            <span class="tag">distributed systems</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- ── Divider ────────────────────────────────────────── -->
+      <div class="divider"></div>
+
+      <!-- ── Stack table ───────────────────────────────────── -->
+      <p class="section-label">Daily Stack</p>
+      <h2 class="section-title" style="font-size:1.5rem;margin-bottom:24px;">Tools I use every day</h2>
+
+      <table class="stack-table">
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>Category</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rust</td>
+            <td>Language</td>
+            <td class="muted">Systems programming, CLIs, anything where performance and correctness matter</td>
+          </tr>
+          <tr>
+            <td>Go</td>
+            <td>Language</td>
+            <td class="muted">APIs, microservices, developer tooling — fast to ship</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Language</td>
+            <td class="muted">Data pipelines, scripting, quick prototypes</td>
+          </tr>
+          <tr>
+            <td>Neovim</td>
+            <td>Editor</td>
+            <td class="muted">Configured with LSP, Treesitter and a minimal plugin set</td>
+          </tr>
+          <tr>
+            <td>Kubernetes</td>
+            <td>Orchestration</td>
+            <td class="muted">Production workloads; prefer managed EKS / GKE</td>
+          </tr>
+          <tr>
+            <td>Terraform</td>
+            <td>IaC</td>
+            <td class="muted">All infrastructure as code, state in S3</td>
+          </tr>
+          <tr>
+            <td>PostgreSQL</td>
+            <td>Database</td>
+            <td class="muted">Default choice; reach for Redis for caching</td>
+          </tr>
+          <tr>
+            <td>GitHub Actions</td>
+            <td>CI / CD</td>
+            <td class="muted">Reproducible pipelines with reusable workflows</td>
+          </tr>
+          <tr>
+            <td>Prometheus + Grafana</td>
+            <td>Observability</td>
+            <td class="muted">Metrics, dashboards, alerts</td>
+          </tr>
+          <tr>
+            <td>Nix / NixOS</td>
+            <td>Dev environment</td>
+            <td class="muted">Reproducible shells via <code>flake.nix</code></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 <span>Idris Zuncevski</span></p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="about.html">About</a>
+        <a href="tech.html">Tech</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

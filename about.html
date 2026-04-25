@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Idris Zuncevski</title>
+  <meta name="description" content="About Idris Zuncevski — software engineer, background, experience and interests." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="index.html">idris<span>.</span>zuncevski</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tech.html">Tech</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- ── Header ────────────────────────────────────────── -->
+      <div class="about-header">
+        <div class="about-content">
+          <p class="section-label">About</p>
+          <h1>Idris Zuncevski</h1>
+          <p class="role">// Software Engineer · Berlin, Germany</p>
+          <p>
+            I'm a software engineer with a background in computer science and a
+            strong interest in distributed systems, programming language design,
+            and the tools that help developers write better software faster.
+          </p>
+          <p>
+            Currently working on back-end infrastructure and developer experience
+            at a Berlin-based tech company. Outside of work I contribute to
+            open-source projects, write about software engineering, and tinker
+            with compilers and formal methods.
+          </p>
+          <p>
+            When I'm not in front of a screen you'll find me cycling through
+            the city, reading philosophy, or attempting to bake sourdough.
+          </p>
+          <div style="margin-top:24px;">
+            <a href="contact.html" class="btn btn--primary">Get in touch</a>
+          </div>
+        </div>
+        <div class="about-avatar" aria-hidden="true">IZ</div>
+      </div>
+
+      <!-- ── Experience ────────────────────────────────────── -->
+      <section class="about-section">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">2023 — present</span>
+            <div class="timeline-content">
+              <h3>Senior Software Engineer</h3>
+              <p class="org">Acme Corp · Berlin</p>
+              <p>Leading the design and implementation of a high-throughput
+              event-processing platform. Responsible for service architecture,
+              code review culture and on-call reliability.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2020 — 2023</span>
+            <div class="timeline-content">
+              <h3>Software Engineer</h3>
+              <p class="org">DataStream GmbH · Hamburg</p>
+              <p>Built and maintained streaming data pipelines processing
+              &gt;50 M events per day. Migrated monolithic services to a
+              Kubernetes-based micro-service architecture.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2018 — 2020</span>
+            <div class="timeline-content">
+              <h3>Junior Developer</h3>
+              <p class="org">Webcraft Studio · Remote</p>
+              <p>Full-stack web development for agency clients. Introduced
+              automated testing and a CI pipeline that cut release time by 60 %.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Education ──────────────────────────────────────── -->
+      <section class="about-section">
+        <h2>Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">2015 — 2018</span>
+            <div class="timeline-content">
+              <h3>M.Sc. Computer Science</h3>
+              <p class="org">Technische Universität Berlin</p>
+              <p>Thesis: <em>Verified Compilation of a Simply-Typed Lambda
+              Calculus Fragment</em>. Focus on programming language theory
+              and formal verification.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-date">2011 — 2015</span>
+            <div class="timeline-content">
+              <h3>B.Sc. Computer Science</h3>
+              <p class="org">Humboldt-Universität zu Berlin</p>
+              <p>Core studies in algorithms, operating systems, databases,
+              and software engineering.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Skills ─────────────────────────────────────────── -->
+      <section class="about-section">
+        <h2>Skills &amp; Technologies</h2>
+        <div class="skills-grid">
+          <span class="skill-tag">Rust</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Terraform</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Redis</span>
+          <span class="skill-tag">Kafka</span>
+          <span class="skill-tag">gRPC</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">LLVM</span>
+          <span class="skill-tag">WebAssembly</span>
+          <span class="skill-tag">OpenTelemetry</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 <span>Idris Zuncevski</span></p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="about.html">About</a>
+        <a href="tech.html">Tech</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
