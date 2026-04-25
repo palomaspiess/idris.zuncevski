@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Idris Zuncevski</title>
+  <meta name="description" content="Get in touch with Idris Zuncevski." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ────────────────────────────────────────── -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="index.html">idris<span>.</span>zuncevski</a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="tech.html">Tech</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="tech.html">Tech</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- ── Heading ───────────────────────────────────────── -->
+      <p class="section-label">Contact</p>
+      <h1 class="section-title">Get in touch</h1>
+      <p class="section-intro">
+        Have a project idea, a question, or just want to say hello?
+        Fill in the form below and I'll get back to you within a couple of days.
+      </p>
+
+      <div class="contact-layout">
+
+        <!-- ── Contact form ──────────────────────────────── -->
+        <div>
+          <div class="card" style="padding: 36px;">
+            <form id="contactForm" novalidate>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First name <span class="req">*</span></label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="form-control"
+                    placeholder="Ada"
+                    required
+                    autocomplete="given-name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    class="form-control"
+                    placeholder="Lovelace"
+                    autocomplete="family-name"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email address <span class="req">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="ada@example.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="req">*</span></label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Project enquiry / open-source collaboration / …"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span class="req">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  placeholder="Tell me what you have in mind…"
+                  required
+                ></textarea>
+                <p class="form-hint">Please keep it friendly. No solicitation or recruitment spam, thank you.</p>
+              </div>
+
+              <div class="form-submit">
+                <button type="submit" class="btn btn--primary">Send message →</button>
+              </div>
+
+            </form>
+
+            <div id="formSuccess" class="form-success" role="alert">
+              <span aria-hidden="true">✓</span>
+              Message sent — I'll be in touch soon. Thank you!
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Contact info sidebar ──────────────────────── -->
+        <aside>
+          <div class="contact-info">
+
+            <div class="contact-item">
+              <div class="contact-item__icon">📧</div>
+              <div>
+                <p class="contact-item__label">Email</p>
+                <a href="mailto:idris@zuncevski.dev" class="contact-item__value">
+                  idris@zuncevski.dev
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">🐙</div>
+              <div>
+                <p class="contact-item__label">GitHub</p>
+                <a href="https://github.com/idris-zuncevski" target="_blank" rel="noopener" class="contact-item__value">
+                  @idris-zuncevski
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">🔗</div>
+              <div>
+                <p class="contact-item__label">LinkedIn</p>
+                <a href="https://linkedin.com/in/idris-zuncevski" target="_blank" rel="noopener" class="contact-item__value">
+                  Idris Zuncevski
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">📍</div>
+              <div>
+                <p class="contact-item__label">Location</p>
+                <span class="contact-item__value">Berlin, Germany</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-item__icon">⏰</div>
+              <div>
+                <p class="contact-item__label">Response time</p>
+                <span class="contact-item__value">1 – 2 business days</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- PGP key hint -->
+          <div class="pgp-block" style="margin-top:20px;">
+            <p style="font-family:var(--mono);font-size:0.72rem;color:var(--text-muted);margin-bottom:8px;">
+              // PGP fingerprint
+            </p>
+            <pre>AB12 CD34 EF56 7890 ABCD
+EF12 3456 7890 ABCD EF12</pre>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 <span>Idris Zuncevski</span></p>
+      <nav class="footer__links" aria-label="Footer navigation">
+        <a href="about.html">About</a>
+        <a href="tech.html">Tech</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/idris-zuncevski" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
