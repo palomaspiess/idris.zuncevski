@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technical Work | Idris Zuncevski</title>
+  <meta
+    name="description"
+    content="Technical profile and selected engineering projects by Idris Zuncevski, mechanical engineer."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-lang="en">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Idris Zuncevski</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="technical.html" data-nav="technical">Technical</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="lang-switch" aria-label="Language switch">
+        <a href="technical.html" aria-current="true">EN</a>
+        <a href="de-technical.html">DE</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-compact js-reveal" data-delay="0.06">
+        <p class="eyebrow">Technical Work</p>
+        <h1>Engineering delivery grounded in analysis, manufacturability, and clarity.</h1>
+        <p class="lead">
+          This page summarizes the types of technical work I contribute to and the tools I use to turn ideas
+          into reliable physical systems.
+        </p>
+      </section>
+
+      <section class="carousel-section js-reveal" data-delay="0.1">
+        <div class="carousel-wrapper">
+          <button class="carousel-arrow carousel-prev" aria-label="Previous project">&#8592;</button>
+          <div class="carousel-track" id="carousel-track-en">
+            <article class="carousel-item" data-index="0">
+              <div class="card-thumb" style="background-image:url('assets/project-1.jpg')" role="img" aria-label="Design Engineering"></div>
+              <div class="card-body">
+                <h2>Design Engineering</h2>
+                <p>Development of mechanical assemblies from concept sketches to production-ready models, emphasizing robust interfaces, serviceability, and controlled tolerance stacks.</p>
+              </div>
+            </article>
+            <article class="carousel-item" data-index="1">
+              <div class="card-thumb" style="background-image:url('assets/project-2.jpg')" role="img" aria-label="Simulation and Validation"></div>
+              <div class="card-body">
+                <h2>Simulation &amp; Validation</h2>
+                <p>Structural and thermal analysis to verify assumptions early, reduce iteration cycles, and de-risk final design decisions before fabrication.</p>
+              </div>
+            </article>
+            <article class="carousel-item" data-index="2">
+              <div class="card-thumb" style="background-image:url('assets/project-3.jpg')" role="img" aria-label="Prototype to Production"></div>
+              <div class="card-body">
+                <h2>Prototype to Production</h2>
+                <p>Rapid prototyping workflows paired with manufacturing feedback loops, ensuring designs hold up in machining, assembly, and maintenance.</p>
+              </div>
+            </article>
+            <article class="carousel-item" data-index="3">
+              <div class="card-thumb" style="background-image:url('assets/project-4.jpg')" role="img" aria-label="Load Analysis"></div>
+              <div class="card-body">
+                <h2>Load Analysis</h2>
+                <p>Systematic load-path tracing and margin-of-safety reviews to confirm that every structural joint satisfies service and ultimate load requirements.</p>
+              </div>
+            </article>
+            <article class="carousel-item" data-index="4">
+              <div class="card-thumb" style="background-image:url('assets/project-5.jpg')" role="img" aria-label="Technical Documentation"></div>
+              <div class="card-body">
+                <h2>Technical Documentation</h2>
+                <p>Precise engineering drawings, specification packages, and review-ready reports that keep the entire team aligned from concept to sign-off.</p>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-arrow carousel-next" aria-label="Next project">&#8594;</button>
+        </div>
+      </section>
+
+      <section class="split-card js-reveal" data-delay="0.14">
+        <div>
+          <h2>Tooling</h2>
+          <ul>
+            <li>CAD: parametric part and assembly modeling</li>
+            <li>Analysis: static stress and fatigue assessments</li>
+            <li>Documentation: specifications, drawings, and review packs</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Working Style</h2>
+          <p>
+            I prefer transparent engineering decisions and concise technical communication. Every choice is
+            tied to a requirement: performance, reliability, manufacturability, or lifecycle cost.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Idris Zuncevski</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

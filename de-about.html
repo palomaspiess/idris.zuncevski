@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ueber mich | Idris Zuncevski</title>
+  <meta
+    name="description"
+    content="Ueber Idris Zuncevski, Maschinenbauingenieur mit Fokus auf CAD, Analyse und praxisnahe technische Umsetzung."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-lang="de">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="de-index.html">Idris Zuncevski</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menue</button>
+      <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
+        <a href="de-index.html" data-nav="home">Start</a>
+        <a href="de-about.html" data-nav="about">Ueber mich</a>
+        <a href="de-technical.html" data-nav="technical">Technik</a>
+        <a href="de-contact.html" data-nav="contact">Kontakt</a>
+      </nav>
+      <div class="lang-switch" aria-label="Sprachwechsel">
+        <a href="about.html">EN</a>
+        <a href="de-about.html" aria-current="true">DE</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-hero js-reveal" data-delay="0.06">
+        <div class="about-photo-wrap">
+          <img
+            src="assets/photo.jpg"
+            alt="Idris Zuncevski"
+            class="about-portrait"
+          />
+        </div>
+        <div class="about-intro-text">
+          <p class="eyebrow">Ueber mich</p>
+          <h1>Technische Entscheidungen muessen belastbar, erklaerbar und baubar sein.</h1>
+          <p class="lead">
+            Ich bin Idris Zuncevski, Maschinenbauingenieur mit dem Ziel, technische Komplexitaet in klare,
+            testbare und produktionsfaehige Loesungen zu ueberfuehren.
+          </p>
+        </div>
+      </section>
+
+      <section class="split-card js-reveal" data-delay="0.14">
+        <div>
+          <h2>Arbeitsweise</h2>
+          <p>
+            Mein Ansatz verbindet detaillierte Simulation mit realen Randbedingungen. Ich priorisiere
+            realistische Annahmen, robuste Sicherheitsfaktoren und transparente Abwaegungen im gesamten
+            Entwicklungsprozess.
+          </p>
+        </div>
+        <div>
+          <h2>Schwerpunkte</h2>
+          <ul>
+            <li>Systemarchitektur und Bauteilkonstruktion</li>
+            <li>Festigkeitsnachweise und Designoptimierung</li>
+            <li>Fertigungsgerechtes und wartungsfreundliches Design</li>
+            <li>Praezise technische Dokumentation</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Idris Zuncevski</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

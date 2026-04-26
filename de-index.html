@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idris Zuncevski | Maschinenbauingenieur</title>
+  <meta
+    name="description"
+    content="Startseite von Idris Zuncevski, Maschinenbauingenieur mit Fokus auf praezise technische Systeme."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-home" data-lang="de">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="de-index.html">Idris Zuncevski</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menue</button>
+      <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
+        <a href="de-index.html" data-nav="home">Start</a>
+        <a href="de-about.html" data-nav="about">Ueber mich</a>
+        <a href="de-technical.html" data-nav="technical">Technik</a>
+        <a href="de-contact.html" data-nav="contact">Kontakt</a>
+      </nav>
+      <div class="lang-switch" aria-label="Sprachwechsel">
+        <a href="index.html">EN</a>
+        <a href="de-index.html" aria-current="true">DE</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-splash js-reveal" data-delay="0.05">
+        <div class="hero-splash-inner">
+          <div class="hero-splash-text">
+            <p class="eyebrow">Maschinenbauingenieur</p>
+            <h1>Idris<br>Zuncevski</h1>
+            <p class="hero-subtitle">Engineer with Passion</p>
+          </div>
+          <div class="hero-splash-photo">
+            <img
+              src="assets/photo.jpg"
+              alt="Idris Zuncevski"
+              class="portrait-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="tech-animation js-reveal" data-delay="0.15" aria-hidden="true">
+        <div class="scan-grid"></div>
+        <div class="circuit-layer circuit-a"></div>
+        <div class="circuit-layer circuit-b"></div>
+        <div class="signal-track">
+          <span class="signal-dot"></span>
+          <span class="signal-dot signal-dot-alt"></span>
+        </div>
+        <div class="readout">
+          <p>LASTPFAD-ANALYSE</p>
+          <p>THERMISCHE STABILITAET</p>
+          <p>TOLERANZKARTE FERTIGUNG</p>
+        </div>
+      </section>
+
+      <section class="intro-strip js-reveal" data-delay="0.22">
+        <p>
+          Ich entwickle, validiere und realisiere mechanische Systeme, bei denen analytische Praezision und
+          fertigungsgerechte Umsetzung gleich wichtig sind.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Idris Zuncevski</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

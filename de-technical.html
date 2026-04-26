@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technik | Idris Zuncevski</title>
+  <meta
+    name="description"
+    content="Technisches Profil und Arbeitsfelder von Idris Zuncevski im Maschinenbau."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-lang="de">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="de-index.html">Idris Zuncevski</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menue</button>
+      <nav id="site-nav" class="site-nav" aria-label="Hauptnavigation">
+        <a href="de-index.html" data-nav="home">Start</a>
+        <a href="de-about.html" data-nav="about">Ueber mich</a>
+        <a href="de-technical.html" data-nav="technical">Technik</a>
+        <a href="de-contact.html" data-nav="contact">Kontakt</a>
+      </nav>
+      <div class="lang-switch" aria-label="Sprachwechsel">
+        <a href="technical.html">EN</a>
+        <a href="de-technical.html" aria-current="true">DE</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero-compact js-reveal" data-delay="0.06">
+        <p class="eyebrow">Technik</p>
+        <h1>Engineering mit Fokus auf Analyse, Fertigbarkeit und Nachvollziehbarkeit.</h1>
+        <p class="lead">
+          Diese Seite zeigt die technischen Arbeitsfelder, in denen ich Konzepte in belastbare mechanische
+          Systeme ueberfuehre.
+        </p>
+      </section>
+
+      <section class="carousel-section js-reveal" data-delay="0.1">
+        <div class="carousel-wrapper">
+          <button class="carousel-arrow carousel-prev" aria-label="Vorheriges Projekt">&#8592;</button>
+          <div class="carousel-track" id="carousel-track-de">
+            <article class="carousel-item" data-index="0">
+              <div class="card-thumb" style="background-image:url('assets/project-1.jpg')" role="img" aria-label="Konstruktion"></div>
+              <div class="card-body">
+                <h2>Konstruktion</h2>
+                <p>Entwicklung mechanischer Baugruppen von der Idee bis zum fertigungstauglichen CAD-Modell, mit Fokus auf Schnittstellen, Wartbarkeit und Toleranzketten.</p>
+              </div>
+            </article>
+            <article class="carousel-item" data-index="1">
+              <div class="card-thumb" style="background-image:url('assets/project-2.jpg')" role="img" aria-label="Simulation und Absicherung"></div>
+              <div class="card-body">
+                <h2>Simulation &amp; Absicherung</h2>
+                <p>Struktur- und thermische Analysen zur fruehen Validierung von Annahmen und zur deutlichen Risikoreduktion vor der Fertigung.</p>
+              </div>
+            </article>
+            <article class="carousel-item" data-index="2">
+              <div class="card-thumb" style="background-image:url('assets/project-3.jpg')" role="img" aria-label="Prototyp bis Serie"></div>
+              <div class="card-body">
+                <h2>Prototyp bis Serie</h2>
+                <p>Schnelle Prototypzyklen mit Rueckkopplung aus der Fertigung, damit Entwuerfe in Montage, Betrieb und Instandhaltung ueberzeugen.</p>
+              </div>
+            </article>
+            <article class="carousel-item" data-index="3">
+              <div class="card-thumb" style="background-image:url('assets/project-4.jpg')" role="img" aria-label="Lastpfadanalyse"></div>
+              <div class="card-body">
+                <h2>Lastpfadanalyse</h2>
+                <p>Systematische Lastpfadverfolgung und Sicherheitsnachweise fuer jeden Verbindungsknoten unter Betriebs- und Grenzlastbedingungen.</p>
+              </div>
+            </article>
+            <article class="carousel-item" data-index="4">
+              <div class="card-thumb" style="background-image:url('assets/project-5.jpg')" role="img" aria-label="Technische Dokumentation"></div>
+              <div class="card-body">
+                <h2>Technische Dokumentation</h2>
+                <p>Praezise Fertigungszeichnungen, Spezifikationspakete und reviewfaehige Berichte, die das gesamte Team von der Idee bis zur Freigabe synchron halten.</p>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-arrow carousel-next" aria-label="Naechstes Projekt">&#8594;</button>
+        </div>
+      </section>
+
+      <section class="split-card js-reveal" data-delay="0.14">
+        <div>
+          <h2>Werkzeuge</h2>
+          <ul>
+            <li>CAD: parametrische Modellierung von Teilen und Baugruppen</li>
+            <li>Analyse: statische Lastfaelle und Ermuedungsbewertung</li>
+            <li>Dokumentation: Zeichnungen, Spezifikationen und Reviewunterlagen</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Arbeitsprinzip</h2>
+          <p>
+            Jede technische Entscheidung wird an Anforderungen gebunden: Leistung, Zuverlaessigkeit,
+            Fertigbarkeit und Lebenszykluskosten.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Idris Zuncevski</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

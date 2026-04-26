@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Idris Zuncevski</title>
+  <meta
+    name="description"
+    content="About Idris Zuncevski, mechanical engineer focused on CAD, analysis, and practical engineering execution."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-lang="en">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">Idris Zuncevski</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="technical.html" data-nav="technical">Technical</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="lang-switch" aria-label="Language switch">
+        <a href="about.html" aria-current="true">EN</a>
+        <a href="de-about.html">DE</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="about-hero js-reveal" data-delay="0.06">
+        <div class="about-photo-wrap">
+          <img
+            src="assets/photo.jpg"
+            alt="Idris Zuncevski"
+            class="about-portrait"
+          />
+        </div>
+        <div class="about-intro-text">
+          <p class="eyebrow">About</p>
+          <h1>Engineering decisions should be rigorous, explainable, and buildable.</h1>
+          <p class="lead">
+            I am Idris Zuncevski, a mechanical engineer with a strong focus on turning technical complexity
+            into clear, testable, and production-viable solutions.
+          </p>
+        </div>
+      </section>
+
+      <section class="split-card js-reveal" data-delay="0.14">
+        <div>
+          <h2>How I Work</h2>
+          <p>
+            My method balances simulation detail with practical constraints. I prioritize realistic assumptions,
+            robust safety factors, and transparent trade-off documentation throughout the design process.
+          </p>
+        </div>
+        <div>
+          <h2>Core Focus</h2>
+          <ul>
+            <li>Mechanical system architecture and component design</li>
+            <li>Stress validation and design optimization</li>
+            <li>Design for manufacturing and maintainability</li>
+            <li>High-quality engineering documentation</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Idris Zuncevski</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
